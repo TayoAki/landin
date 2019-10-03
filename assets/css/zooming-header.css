@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  font-size: 100%;
+  font-family: "Roboto";
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.header {
+  /*width: 100vw;*/
+  /*height: 100vh;*/
+  /*display: flex;*/
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+}
+
+.header:before {
+  content: "";
+  width: 100%;
+  z-index: -1;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: grow 80s linear .5s infinite;
+  background: linear-gradient(rgba(103,135,211, .6), rgba(144,25,166, .6)), url("http://res.cloudinary.com/dq5anctrd/image/upload/v1496258351/music-1970040_960_720_nqa715.jpg") no-repeat fixed top center / cover;
+}
+
